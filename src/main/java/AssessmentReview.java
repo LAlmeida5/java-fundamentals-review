@@ -29,12 +29,8 @@ public class AssessmentReview {
 
     public static void main(String[] args) {
 
-        System.out.println(cubed(10));
-        System.out.println(difference(35,10));
-        System.out.println(difference(32.0,13.4));
-
-        System.out.println(median(new int[]{2, 20, 3, 7, 7, 5, 8, 7, 10, 0}));
-        System.out.println(median(new int[]{1, 3, 4, 2, 6, 5, 8, 7}));
+        System.out.println(cubed(6));
+        System.out.println(difference(35, 10));
+        System.out.println(difference(32.0, 13.4));
     }
-
 }
