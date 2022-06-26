@@ -1,9 +1,7 @@
-import java.util.ArrayList;
-
 public class TestUpperCaseCatColorMethod {
 
     public static void main(String[] args) {
-
+//
 //        ArrayList<Cat> cats = new ArrayList<>();
 //
 //        Cat blackCat = new Cat(4, true, "Midnight", "black");

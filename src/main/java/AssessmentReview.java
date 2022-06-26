@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
 public class AssessmentReview {
 
     public static double cubed(int num) {
@@ -15,21 +16,27 @@ public class AssessmentReview {
         return num1 - num2;
     }
 
-    public static double median(int[] values) {
-        Arrays.sort(values);
+    public static double median(int[] numbersArr) {
+        Arrays.sort(numbersArr);
         double median;
-        int totalElements = values.length;
+        int totalElements = numbersArr.length;
         if (totalElements % 2 == 0) {
-            int sumOfMidElements = values[totalElements / 2] + values[totalElements / 2 - 1];
+            int sumOfMidElements = numbersArr[totalElements / 2] + numbersArr[totalElements / 2 - 1];
             median = ((double) sumOfMidElements) / 2;
         } else {
-            median = (double) values[values.length / 2];
+            median = (double) numbersArr[numbersArr.length / 2];
         }
         return median;
     }
 
-    public static ArrayList<String> uppercaseCatColor(ArrayList<String>CatObj){
-
+    public static ArrayList<Cat> uppercaseCatColor(ArrayList<Cat>catArrayList){
+        for (Cat cat : catArrayList) {
+            if(!cat.getColor().equals(cat.getColor().toUpperCase())) {
+                String updateColor = cat.getColor().toUpperCase();
+                cat.setColor(updateColor);
+            }
+        }
+        return catArrayList;
     }
 
     public static void main(String[] args) {
@@ -37,5 +44,19 @@ public class AssessmentReview {
         System.out.println(cubed(6));
         System.out.println(difference(35, 10));
         System.out.println(difference(32.0, 13.4));
+
+        ArrayList<Cat> cats = new ArrayList<>();
+
+        Cat blackCat = new Cat("Midnight", 4 ,true , "black");
+        Cat whiteCat = new Cat("Snowball",10,false, "white");
+        Cat orangeCat = new Cat("Dreamsicle", 2 ,true , "orange");
+
+        cats.add(blackCat);
+        cats.add(whiteCat);
+        cats.add(orangeCat);
+
+        cats = AssessmentReview.uppercaseCatColor(cats);
+
+        cats.forEach(cat -> System.out.println(cat.getColor()));
     }
 }

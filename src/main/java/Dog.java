@@ -2,12 +2,13 @@ public class Dog extends Pet implements Barkable{
 
     private String breed;
 
-    public Dog(String breed) {
-        this.breed = breed;
-    }
 
     public Dog(String name, int age, boolean isRescue, String breed) {
         super(name, age, isRescue);
+        this.breed = breed;
+    }
+
+    public Dog(String breed) {
         this.breed = breed;
     }
 
