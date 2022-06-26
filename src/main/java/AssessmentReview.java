@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class AssessmentReview {
@@ -25,6 +26,10 @@ public class AssessmentReview {
             median = (double) values[values.length / 2];
         }
         return median;
+    }
+
+    public static ArrayList<String> uppercaseCatColor(ArrayList<String>CatObj){
+
     }
 
     public static void main(String[] args) {

@@ -3,6 +3,9 @@ public class Pet {
     private int age;
     private boolean isRescue;
 
+    public Pet() {
+    }
+
     public Pet(String name, int age, boolean isRescue) {
         this.name = name;
         this.age = age;
