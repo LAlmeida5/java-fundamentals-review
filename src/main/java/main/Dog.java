@@ -1,10 +1,12 @@
+package main;
+
 public class Dog extends Pet implements Barkable{
 
     private String breed;
 
 
-    public Dog(String name, int age, boolean isRescue, String breed) {
-        super(name, age, isRescue);
+    public Dog(int age, boolean isRescue, String name, String breed) {
+        super(age, isRescue, name);
         this.breed = breed;
     }
 

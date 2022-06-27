@@ -1,3 +1,5 @@
+package main;
+
 public class Pet {
     private String name;
     private int age;
@@ -6,7 +8,7 @@ public class Pet {
     public Pet() {
     }
 
-    public Pet(String name, int age, boolean isRescue) {
+    public Pet(int age, boolean isRescue, String name) {
         this.name = name;
         this.age = age;
         this.isRescue = isRescue;

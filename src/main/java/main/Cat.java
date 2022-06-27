@@ -1,3 +1,5 @@
+package main;
+
 public class Cat extends Pet implements Meowable{
 
     private String color;
@@ -6,8 +8,8 @@ public class Cat extends Pet implements Meowable{
         this.color = color;
     }
 
-    public Cat(String name, int age, boolean isRescue, String color) {
-        super(name, age, isRescue);
+    public Cat( int age, boolean isRescue, String name, String color) {
+        super(age, isRescue, name);
         this.color = color;
     }
 
